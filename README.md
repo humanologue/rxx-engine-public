@@ -1,7 +1,3 @@
-# **README.md COMPLET - RXX ENGINE V17.0**
-
-```markdown
-<div align="center">
 
 # 🚀 RXX Engine V17.0 - Monitoring Géopolitique Temps Réel
 
