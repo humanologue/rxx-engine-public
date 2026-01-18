@@ -59,7 +59,7 @@ pip install -r requirements.txt
 ### Démarrage (2 min)
 ```bash
 # Clone + install
-git clone https://github.com/humanologue/rxx-engine.git
+git clone https://github.com/humanologue/rxx-engine-public.git
 cd rxx-engine
 pip install -r requirements.txt
 
