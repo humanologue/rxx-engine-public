@@ -5,7 +5,7 @@
 
 # 🚀 RXX Engine V17.0 - Monitoring Géopolitique Temps Réel
 
-[![IDD Status](https://img.shields.io/badge/IDD-100%25-brightgreen.svg)]()
+[![IDD Status](https://img.shields.io/badge/IDD-100%25-brightgreen.svg)][attached_file:1]
 [![Hypothèses](https://img.shields.io/badge/Hypothèses-6%2F8-blue.svg)]()
 [![GDELT](https://img.shields.io/badge/R32-1140%20%C3%A9v%C3%A9nements-red.svg)]()
 [![Battery](https://img.shields.io/badge/Battery-4%2F6%20SUPERCYCLE-orange.svg)]()
@@ -125,13 +125,56 @@ rxx-engine/
 3. **Test** `python Rxx_Engine_V17.0.py`
 4. **PR** vers `main`
 
-## 📄 Licence
 
-[MIT](LICENSE) - Utilisation libre recherche/monitoring
+## 📄 Licence et DMCA Policy - EFF-Compliant
+
+**MIT License** + **Clause de Protection DMCA §512(f)**
+
+MIT License
+Copyright (c) 2026 humanologue
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+**Clause EFF Additionnelle** : Tout abus de DMCA (takedown injustifié) constitue une mauvaise foi sous §512(f). Les frais juridiques sont récupérables. Conforme au *EFF DMCA Survival Guide*.
+
+---
+
+### ⚖️ Politique DMCA - Protection Juridique
+
+**RXX Engine = 100% code original + données publiques GDELT (BigQuery)**
+
+**DMCA reçu → Counter-Notification automatique sous 24h (procédure EFF)**
+
+- **Sources prouvées** : Dataset public `gdelt-bq.gdeltv2.events` (Google BigQuery)
+- **Fair Use** : Recherche académique et transparence géopolitique
+- **Zero propriété tierce** : Pas de reverse-engineering, APIs propriétaires ou données privées
+
+**Abuseurs DMCA → Responsabilité §512(f)** (soutenu EFF/Lumen Database)
+
+**Miroirs multiples** : GitHub • GitLab • Codeberg • IPFS
+
+**[Template Counter-Notice EFF](https://www.eff.org/issues/dmca#safe-harbors)** | **[Lumen Database](https://lumendatabase.org/)**
 
 ## 👥 Auteurs
 
-**humanologue** - Monitoring géopolitique IA  
+**Thomas CALVET** (humanologue) - Monitoring géopolitique IA  
 [github.com/humanologue](https://github.com/humanologue)  
 **V17.0** - 18/01/2026 - IDD 100/100
 
