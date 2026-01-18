@@ -4,8 +4,8 @@ import os
 import json
 from datetime import datetime, timedelta
 
-EMAIL = "humanologue@gmail.com"  # Remplacez
-PASSWORD = "tptvB.6mYrZi=W7"    # Remplacez
+EMAIL = "yourmail@abc.xx"  # Remplacez
+PASSWORD = "password"    # Remplacez
 
 print("=== Diagnostic API ACLED ===")
 

@@ -12,7 +12,7 @@ CACHE_FILE = CACHE_DIR / "r11_gas_cache.pkl"
 CACHE_MAX_AGE_HOURS = 24  # Rafraîchir toutes les 24h
 
 # VOTRE CLÉ API (sans espace à la fin !)
-API_KEY = "efc6b409262351e34b7e459c509277ad"
+API_KEY = "agsi_api_key"
 
 def load_cache():
     """Charge les données en cache si elles existent et sont récentes"""
