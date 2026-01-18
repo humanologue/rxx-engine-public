@@ -13,113 +13,136 @@
 
 </div>
 
-## 🎯 Aperçu
+🎯 Aperçu
 
-**RXX Engine** monitore **65 indicateurs critiques** en temps réel :
+RXX Engine monitore 65 indicateurs critiques en temps réel :
+Domaine	Exemples	Source
+Géopolitique	R32 GDELT (1140 événements Code18) - OTAN - Carriers US (7)	GDELT, SIPRI, USNI
+Économie	PBOC ($48T) - BTC($95k) - Fear&Greed (49) - DXY (99.38)	PBOC, CoinMarketCap
+Énergie	Brent ($64) - OPEC (92%) - LNG Russie (51%) - TTF (€37)	IEA, OPEC, EIA
+Métaux	Li ($159k/t) - Ag ($89/oz) - Ni/Co	SUPERCYCLE 4/6
+Cyber	Zero-days (269) - IOC (450) - C2 DNS (100)	CISA, VirusTotal
+Agri/Env	Séismes M6+ (2) - Sécheresse IMD (14%) - Forêts (-10.9%)	USGS, IMD, FAO
 
-| **Domaine** | **Exemples** | **Source** |
-|-------------|--------------|------------|
-| **Géopolitique** | R32 GDELT (1140 événements Code18) • OTAN • Carriers US | GDELT, SIPRI, USNI |
-| **Économie** | PBOC ($48T) • BTC/ETH • Fear&Greed (49) • DXY (99.38) | PBOC, CoinMarketCap |
-| **Énergie** | Brent ($64) • OPEC (92%) • LNG Russie (51%) • TTF (€37) | IEA, OPEC, EIA |
-| **Métaux** | **Li ($159k/t) • Ag ($89/oz) • Ni/Co** | **SUPERCYCLE 4/6** |
-| **Cyber** | Zero-days (269) • IOC (450) • C2 DNS (100) | CISA, VirusTotal |
-| **Agri/Env** | Séismes M6+ (2) • Sécheresse IMD (14%) • Forêts (-10.9%) | USGS, IMD, FAO |
+Score IDD : 100/100 🟢 ROUTINE OK
+🔥 Fonctionnalités Clés
 
-**Score IDD : 100/100** 🟢 **ROUTINE OK**
+    Validation Épistémique : 8 hypothèses DYNAMO testées automatiquement
 
-## 🔥 Fonctionnalités Clés
+    GDELT R32 : 1140 événements Code18 mondial (quota robuste)
 
-- **Validation Épistémique** : 8 hypothèses DYNAMO testées automatiquement
-- **GDELT R32** : 1140 événements Code18 mondial (quota robuste)
-- **Battery Metals** : Supercycle détecté **4/6** (Li/Ag/Ni/Co)
-- **Alertes Temps Réel** : Cyber (R00=269↑), Énergie (R11=51%↓)
-- **Base Historique** : 104 exécutions (rxx_history.db)
-- **Dashboard Interactif** : [validation_report.html](validation_report.html)
+    Battery Metals : Supercycle détecté 4/6 (Li/Ag/Ni/Co)
 
-## 📊 Hypothèses DYNAMO v2.4 (6/8 ✅)
+    Alertes Temps Réel : Cyber (R00=269↑), Énergie (R11=51%↓)
 
-| **Hypothèse** | **Statut** | **Indicateurs** |
-|---------------|------------|-----------------|
-| H1_P4 | ✅ | R11=51% • R24=€37 |
-| H2_OTAN | ✅ | R02=4638 > 4000 |
-| H3_CYBER | ✅ | R00=269 • R81=450 |
-| **H5_GDELT** | ✅ | **R32=1140 événements** |
-| H6_CH_Afrique | ✅ | R01=48T$ |
-| H11_SCW | ✅ | R71=0.997B$ |
+    Base Historique : 104 exécutions (rxx_history.db)
 
-## 🎛️ Installation & Utilisation
+    Dashboard Interactif : validation_report.html
 
-### Prérequis
-```bash
-Python 3.11+ -  Git -  BigQuery Console (optionnel)
-pip install -r requirements.txt
-```
+📊 Hypothèses DYNAMO v2.4 (6/8 ✅)
+Hypothèse	Statut	Indicateurs
+H1_P4	✅	R11=51% - R24=€37
+H2_OTAN	✅	R02=4638 > 4000
+H3_CYBER	✅	R00=269 - R81=450
+H5_GDELT	✅	R32=1140 événements
+H6_CH_Afrique	✅	R01=48T$
+H11_SCW	✅	R71=0.997B$
+🎛️ Installation & Utilisation
+Prérequis
 
-### Démarrage (2 min)
-```bash
+bash
+Python 3.11+ - Git - BigQuery Console (optionnel)
+
+##Démarrage (2 min)
+
+bash
 # Clone + install
-git clone https://github.com/humanologue/rxx-engine.git
-cd rxx-engine
+git clone https://github.com/humanologue/rxx-engine-public.git
+cd rxx-engine-public
 pip install -r requirements.txt
+
+# 🔑 CREDENTIALS (CRITIQUE)
+cp .env.example .env
+# → Voir [credentials.md](credentials.md) pour setup complet
 
 # Données GDELT manuelles (quota robuste)
 # BigQuery Console → rootcodes_7j.csv → db_local/
 
 # Lancement
 python Rxx_Engine_V17.0.py
-```
 
-### Routine Quotidienne (14h)
-```bash
+🔑 Gestion des Credentials (Nouveau)
+
+⚠️ AUCUNE credential dans le repo public
+Structure .env
+
+bash
+cp .env.example .env
+
+Référence complète : credentials.md
+
+APIs requises (20+ sources) :
+
+text
+🔴 CYBER: CISA/NVD/VirusTotal/Shadowserver
+🟢 ÉCONOMIE: PBOC/IEA/OPEC/USDA
+🟢 GÉOPOLITIQUE: GDELT/SIPRI/USNI
+🟡 AGRI/ENV: ECDC/PSMSL/IMD/FAO
+
+🕒 Routine Quotidienne (14h)
+
+bash
 # 1. BigQuery → rootcodes_7j.csv (5min)
 # 2. Exécution
 python Rxx_Engine_V17.0.py
-# 3. GitHub
+# 3. Git (optionnel)
 git add . && git commit -m "RXX $(date +%Y%m%d)" && git push
-```
 
-## 🛠️ Structure du Projet
+🛠️ Structure du Projet
 
-```
-rxx-engine/
+text
+rxx-engine-public/
 ├── Rxx_Engine_V17.0.py      # Moteur principal IDD 100
 ├── r32_gdelt.py             # R32 GDELT (1140|-6.2)
 ├── ontologie.json           # 65 nœuds pipeline
+├── requirements.txt         # Dépendances minimales
+├── .env.example             # Template credentials
+├── credentials.md           # Guide APIs 20+ sources
 ├── db_local/                # Données (ignoré .gitignore)
 │   └── rootcodes_7j.csv     # GDELT 35 lignes réelles
 ├── doc/                     # Documentation complète
 ├── validation_report.html   # Dashboard interactif
 └── rxx_history.db          # 104 exécutions historiques
-```
 
-## 📈 Résultats V17.0 (18/01)
+📈 Résultats V17.0 (18/01)
 
-```
+text
 🎯 IDD: 100.0/100 🟢 ROUTINE OK
 📊 Nœuds: 65 | Scripts: 51/65 OK
 ✅ H5_GDELT: R32=1140 événements Code18
 🔋 Battery: 4/6 SUPERCYCLE (Li/Ag/Ni/Co)
 🚨 Alertes: R00=269 zero-days ↑ | R92=100 C2 DNS
 ⏱️ Timing: 98s (R98=28s, R99=19s)
-```
 
-## 🔮 Signaux Stratégiques
+🔮 Signaux Stratégiques
 
-```
+text
 🟢 Battery Metals SUPERCYCLE → ACCUMULATION AGRESSIVE
 🟢 Chine PBOC $48T → Stable
 🟢 OTAN R02=4638 → Effort militaire ↑
 🟡 Cyber R00=269 zero-days → Vigilance
 🟡 LNG Russie 51% → Dépendance persistante
-```
 
-## 🤝 Contributing
+🤝 Contributing
 
-1. **Fork** le projet
-2. **BigQuery** → `rootcodes_7j.csv` à jour
-3. **Test** `python Rxx_Engine_V17.0.py`
-4. **PR** vers `main`
+    Fork le projet
+
+    BigQuery → rootcodes_7j.csv à jour
+
+    Test python Rxx_Engine_V17.0.py
+
+    PR vers main
+
 
 
 ## 📄 Licence et DMCA Policy - EFF-Compliant
