@@ -1,66 +1,66 @@
 node_id;donnee;domaine;priorite;valeur_live;statut_contextuel;alerte_seuil;hypothese_liee;statut_exec;seuil;timestamp
-R200;Climat ERA5 Anomalie °C;AGRI_ENV;🔴;1.18;📊;✅;;OK;>1.5;2026-01-18 02:19 CET
-R00;Zero-Days CVE (CISA/NVD);CYBER;🔴;269;📊;🚨;H3_CYBER_SUPPLY;OK;>15;2026-01-18 02:19 CET
-R81;IOC VirusTotal (Top Threats);CYBER;🔴;450;📊;✅;H3_CYBER_SUPPLY;OK;>500;2026-01-18 02:19 CET
-R91;Netflow ERT Iran (Shadowserver);CYBER;🔴;254;✅ BAS;✅;;OK;>100k;2026-01-18 02:19 CET
-R92;DNS C2 Domains Count;CYBER;🔴;100;📊;🚨;;OK;>50;2026-01-18 02:19 CET
-R95;MITRE ATT&CK TTPs (New);CYBER;🔴;1;📊;✅;H9_TECH_WAR;OK;>5;2026-01-18 02:19 CET
-R96;HIBP Breaches Count;CYBER;🔴;156;📊;🚨;;OK;>100;2026-01-18 02:19 CET
-R97;Yara Rules New;CYBER;🔴;187;📊;🚨;;OK;>50;2026-01-18 02:19 CET
-R11;LNG EU imports Russia %total;ENERGIE;🔴;51.3;✅ STABLE;🚨;H1_P4;OK;[40, 60];2026-01-18 02:19 CET
-R24;TTF Last Price €/MWh;ENERGIE;🔴;37.63;✅ BAS;🚨;H1_P4;OK;[25, 50];2026-01-18 02:19 CET
-R32;Code18 Global GDELT nb|tone|loc;GEOPOLITIQUE;🔴;182;📊;🚨;H5_GDELT;OK;>5;2026-01-18 02:19 CET
-R32_20;Manifestations Iran GDELT (code 20);GEOPOLITIQUE;🔴;956 | -4.7 | 26h;📊;📊;;OK;>5;2026-01-18 02:19 CET
-R125;Pathogènes ECDC Count;AGRI_ENV;🟡;14;📊;🚨;;OK;>10;2026-01-18 02:19 CET
-R127;Niveau Mer PSMSL mm/an;AGRI_ENV;🟡;4.2;📊;🚨;;OK;>4;2026-01-18 02:19 CET
-R74;Forêts FAO %perte/an;AGRI_ENV;🟡;10.9;📊;🚨;;OK;>1%;2026-01-18 02:19 CET
-R76;Eau Douce → Disponibilité Mondiale → km³/an;AGRI_ENV;🟡;3800;📊;🚨;;OK;>3000;2026-01-18 02:19 CET
-R85;Dégradation sols ha/an;AGRI_ENV;🟡;1.7;📊;✅;;OK;>1M;2026-01-18 02:19 CET
-R82;Surveillance Firms (surveillancewatch.io);CYBER;🟡;12;📊;✅;;OK;>500;2026-01-18 02:19 CET
-R83;Pays ciblés (surveillancewatch.io);CYBER;🟡;MANUEL;📊;📊;;MANUEL;>150;2026-01-18 02:19 CET
-R84;Financements surveillance (surveillancewatch.io);CYBER;🟡;2864;📊;🚨;;OK;>50;2026-01-18 02:19 CET
-R06;Or Napoléon €/pièce;ECONOMIE;🟡;746;⚠️ NAPOLÉON BAS;✅;;OK;>900€;2026-01-18 02:19 CET
-R23;BTC/S&P Liquidité Ratio;ECONOMIE;🟡;MANUEL;📊;📊;;MANUEL;>1.0;2026-01-18 02:19 CET
-R54;Senate Trade Vote;ECONOMIE;🟡;MANUEL;📊;📊;;MANUEL;>60%;2026-01-18 02:19 CET
-R55;USCC Tariff Score;ECONOMIE;🟡;MANUEL;📊;📊;;MANUEL;>70;2026-01-18 02:19 CET
-R59;M2 YoY %;ECONOMIE;🟡;MANUEL;📊;📊;;MANUEL;>5%;2026-01-18 02:19 CET
-R71;USD1 Stablecoin Capitalisation $B | Peg Ratio;ECONOMIE;🟡;0.9971;⚠️ USD1 BAS;✅;H9_TECH_WAR;OK;[1.0, 5.0];2026-01-18 02:19 CET
-R72;USDC Capitalisation $B vs USDT Marketshare %;ECONOMIE;🟡;MANUEL;📊;📊;H9_TECH_WAR;MANUEL;>$50B;2026-01-18 02:19 CET
-R16;Libya Oil Production Mb/d;ENERGIE;🟡;1.2;📊;✅;;OK;>1.2;2026-01-18 02:19 CET
-R17;Red Sea Tanker Traffic (24h);GEOPOLITIQUE;🟡;10;📊;✅;;OK;>15;2026-01-18 02:19 CET
-R33;Urban Riots GDELT;GEOPOLITIQUE;🟡;0;📊;✅;;MANUEL;>10;2026-01-18 02:19 CET
-R65_pv;Silver PV Demand kt/an;METAUX;🟡;560;📊;🚨;;OK;>10;2026-01-18 02:19 CET
-R66_pv;Lithium PV Demand kt/an;METAUX;🟡;180;📊;🚨;;OK;>100;2026-01-18 02:19 CET
-R100;Arctique Extent Mkm²;AGRI_ENV;🟢;MANUEL;📊;📊;;MANUEL;<14;2026-01-18 02:19 CET
-R28;metadata.count M6+;AGRI_ENV;🟢;2;📊;🚨;;OK;>1;2026-01-18 02:19 CET
-R98;IMD Drought % déficit;AGRI_ENV;🟢;14.0;📊;🚨;;OK;>10%;2026-01-18 02:19 CET
-R99;Moussons IMD %LPA;AGRI_ENV;🟢;100.0;📊;✅;;OK;<80%;2026-01-18 02:19 CET
-R01;PBOC Balance Sheet $T;ECONOMIE;🟢;48.2;🟢 PBOC STABLE;✅;H6_CH_Afrique;OK;>45T;2026-01-18 02:19 CET
-R03;ETH Price USD;ECONOMIE;🟢;3.301;📊;✅;;OK;>3000;2026-01-18 02:19 CET
-R10;VIX 1D;ECONOMIE;🟢;15.86;📊;✅;;OK;>20;2026-01-18 02:19 CET
-R12;Fear&Greed Index;ECONOMIE;🟢;49;🟢 NEUTRE;🚨;;OK;[20, 50];2026-01-18 02:19 CET
-R15;BTC Price USD;ECONOMIE;🟢;94.914;🟢 NORMAL;✅;H8_CRYPTO;OK;[85000, 100000];2026-01-18 02:19 CET
-R53;Tariff Vote %R;ECONOMIE;🟢;MANUEL;📊;📊;;MANUEL;>50%;2026-01-18 02:19 CET
-R56;SSR Model;ECONOMIE;🟢;MANUEL;📊;📊;;MANUEL;>1.0;2026-01-18 02:19 CET
-R57;NUPL;ECONOMIE;🟢;MANUEL;📊;📊;;MANUEL;>0.7;2026-01-18 02:19 CET
-R58;DXY Index;ECONOMIE;🟢;99.38;📊;✅;;OK;>100;2026-01-18 02:19 CET
-R07;VNZ Oil production Mb/d;ENERGIE;🟢;1.1;📊;✅;;OK;>2.0 Mb/d;2026-01-18 02:19 CET
-R09;Brent Crude Oil Spot Price $/bbl;ENERGIE;🟢;64.13;📊;🚨;;OK;>60;2026-01-18 02:19 CET
-R13;OPEC+ Compliance %;ENERGIE;🟢;92;📊;🚨;;OK;>85%;2026-01-18 02:19 CET
-R201;Énergie Globale IEA TWh;ENERGIE;🟢;32000;📊;🚨;;OK;>30k;2026-01-18 02:19 CET
-R25;Venezuela→China Oil %;ENERGIE;🟢;742;🟢 CNPC VZ DOM;🚨;;OK;>75%;2026-01-18 02:19 CET
-R26;LNG US EU bcm;ENERGIE;🟢;MANUEL;📊;📊;;MANUEL;>50 bcm;2026-01-18 02:19 CET
-R45;Natural Gas Exports to EU bcm;ENERGIE;🟢;MANUEL;📊;📊;;MANUEL;>10;2026-01-18 02:19 CET
-R02;USA/FRA/UK/FRG → UKR/POL/EST/LIT/LAT/FIN → Total TIV;GEOPOLITIQUE;🟢;4638;📊;🚨;H2_OTAN;OK;>4000;2026-01-18 02:19 CET
-R04;PLA Navy 052D/055 destroyers actifs;GEOPOLITIQUE;🟢;370;📊;🚨;;OK;>350;2026-01-18 02:19 CET
-R05;Suez Traffic % détourné;GEOPOLITIQUE;🟢;100;📊;🚨;;OK;>5%;2026-01-18 02:19 CET
-R32_17;Répression GDELT (code 17);GEOPOLITIQUE;🟢;18 | -8.2 | US:18.CN:12.RU:8.FR:5 | 26h;📊;📊;;OK;>10;2026-01-18 02:19 CET
-R32_18;Geo Disputes GDELT (code 18);GEOPOLITIQUE;🟢;2065 | -5.9 | US:653.IR:194.VE:136.IS:134.UP:121 | 26h;📊;📊;;OK;>50;2026-01-18 02:19 CET
-R33_acled;ACLED Riots Count;GEOPOLITIQUE;🟢;0;📊;✅;;MANUEL;>10;2026-01-18 02:19 CET
-R36;US Carriers Deployed;GEOPOLITIQUE;🟢;7;📊;✅;;OK;>7;2026-01-18 02:19 CET
-R65;Ag Spot USD/oz | Déficit kt/an;METAUX;🟢;89.94;🟢 AG BULL;🚨;H3_CYBER_SUPPLY;OK;>30;2026-01-18 02:19 CET
-R66;Carbonate Li2CO3 CIF $t;METAUX;🟢;159.500;📊;✅;H3_CYBER_SUPPLY;OK;>25k;2026-01-18 02:19 CET
-R67;Nickel LME 3m $/t;METAUX;🟢;14566;⚠️ Ni BAS;✅;H3_CYBER_SUPPLY;OK;>20k;2026-01-18 02:19 CET
-R68;Cobalt LME $/lb;METAUX;🟢;48570;🟢 Co BULL;🚨;H3_CYBER_SUPPLY;OK;>35k;2026-01-18 02:19 CET
-R69;Graphite naturel flake $t;METAUX;🟢;500;⚠️ Gr BAS;✅;H3_CYBER_SUPPLY;OK;>10k;2026-01-18 02:19 CET
-R70;Oxydes terres rares $kg;METAUX;🟢;61;⚠️ REO BAS;✅;H3_CYBER_SUPPLY;OK;>100;2026-01-18 02:19 CET
+R200;Climat ERA5 Anomalie °C;AGRI_ENV;🔴;1.18;📊;✅;;OK;>1.5;2026-01-18 15:19 CET
+R00;Zero-Days CVE (CISA/NVD);CYBER;🔴;269;📊;🚨;H3_CYBER_SUPPLY;OK;>15;2026-01-18 15:19 CET
+R81;IOC VirusTotal (Top Threats);CYBER;🔴;450;📊;✅;H3_CYBER_SUPPLY;OK;>500;2026-01-18 15:19 CET
+R91;Netflow ERT Iran (Shadowserver);CYBER;🔴;254;✅ BAS;✅;;OK;>100k;2026-01-18 15:19 CET
+R92;DNS C2 Domains Count;CYBER;🔴;100;📊;🚨;;OK;>50;2026-01-18 15:19 CET
+R95;MITRE ATT&CK TTPs (New);CYBER;🔴;1;📊;✅;H9_TECH_WAR;OK;>5;2026-01-18 15:19 CET
+R96;HIBP Breaches Count;CYBER;🔴;156;📊;🚨;;OK;>100;2026-01-18 15:19 CET
+R97;Yara Rules New;CYBER;🔴;187;📊;🚨;;OK;>50;2026-01-18 15:19 CET
+R11;LNG EU imports Russia %total;ENERGIE;🔴;51.3;✅ STABLE;🚨;H1_P4;OK;[40, 60];2026-01-18 15:19 CET
+R24;TTF Last Price €/MWh;ENERGIE;🔴;37.63;✅ BAS;🚨;H1_P4;OK;[25, 50];2026-01-18 15:19 CET
+R32;Code18 Global GDELT nb|tone|loc;GEOPOLITIQUE;🔴;1140;📊;🚨;H5_GDELT;ERR1;>5;2026-01-18 15:19 CET
+R32_20;Manifestations Iran GDELT (code 20);GEOPOLITIQUE;🔴;23 | -3.9 | 0h;📊;📊;;OK;>5;2026-01-18 15:19 CET
+R125;Pathogènes ECDC Count;AGRI_ENV;🟡;14;📊;🚨;;OK;>10;2026-01-18 15:19 CET
+R127;Niveau Mer PSMSL mm/an;AGRI_ENV;🟡;4.2;📊;🚨;;OK;>4;2026-01-18 15:19 CET
+R74;Forêts FAO %perte/an;AGRI_ENV;🟡;10.9;📊;🚨;;OK;>1%;2026-01-18 15:19 CET
+R76;Eau Douce → Disponibilité Mondiale → km³/an;AGRI_ENV;🟡;3800;📊;🚨;;OK;>3000;2026-01-18 15:19 CET
+R85;Dégradation sols ha/an;AGRI_ENV;🟡;1.7;📊;✅;;OK;>1M;2026-01-18 15:19 CET
+R82;Surveillance Firms (surveillancewatch.io);CYBER;🟡;12;📊;✅;;OK;>500;2026-01-18 15:19 CET
+R83;Pays ciblés (surveillancewatch.io);CYBER;🟡;MANUEL;📊;📊;;MANUEL;>150;2026-01-18 15:19 CET
+R84;Financements surveillance (surveillancewatch.io);CYBER;🟡;2864;📊;🚨;;OK;>50;2026-01-18 15:19 CET
+R06;Or Napoléon €/pièce;ECONOMIE;🟡;746;⚠️ NAPOLÉON BAS;✅;;OK;>900€;2026-01-18 15:19 CET
+R23;BTC/S&P Liquidité Ratio;ECONOMIE;🟡;MANUEL;📊;📊;;MANUEL;>1.0;2026-01-18 15:19 CET
+R54;Senate Trade Vote;ECONOMIE;🟡;MANUEL;📊;📊;;MANUEL;>60%;2026-01-18 15:19 CET
+R55;USCC Tariff Score;ECONOMIE;🟡;MANUEL;📊;📊;;MANUEL;>70;2026-01-18 15:19 CET
+R59;M2 YoY %;ECONOMIE;🟡;MANUEL;📊;📊;;MANUEL;>5%;2026-01-18 15:19 CET
+R71;USD1 Stablecoin Capitalisation $B | Peg Ratio;ECONOMIE;🟡;0.9971;⚠️ USD1 BAS;✅;H9_TECH_WAR;OK;[1.0, 5.0];2026-01-18 15:19 CET
+R72;USDC Capitalisation $B vs USDT Marketshare %;ECONOMIE;🟡;MANUEL;📊;📊;H9_TECH_WAR;MANUEL;>$50B;2026-01-18 15:19 CET
+R16;Libya Oil Production Mb/d;ENERGIE;🟡;1.2;📊;✅;;OK;>1.2;2026-01-18 15:19 CET
+R17;Red Sea Tanker Traffic (24h);GEOPOLITIQUE;🟡;10;📊;✅;;OK;>15;2026-01-18 15:19 CET
+R33;Urban Riots GDELT;GEOPOLITIQUE;🟡;0;📊;✅;;MANUEL;>10;2026-01-18 15:19 CET
+R65_pv;Silver PV Demand kt/an;METAUX;🟡;560;📊;🚨;;OK;>10;2026-01-18 15:19 CET
+R66_pv;Lithium PV Demand kt/an;METAUX;🟡;180;📊;🚨;;OK;>100;2026-01-18 15:19 CET
+R100;Arctique Extent Mkm²;AGRI_ENV;🟢;MANUEL;📊;📊;;MANUEL;<14;2026-01-18 15:19 CET
+R28;metadata.count M6+;AGRI_ENV;🟢;2;📊;🚨;;OK;>1;2026-01-18 15:19 CET
+R98;IMD Drought % déficit;AGRI_ENV;🟢;14.0;📊;🚨;;OK;>10%;2026-01-18 15:19 CET
+R99;Moussons IMD %LPA;AGRI_ENV;🟢;100.0;📊;✅;;OK;<80%;2026-01-18 15:19 CET
+R01;PBOC Balance Sheet $T;ECONOMIE;🟢;48.2;🟢 PBOC STABLE;✅;H6_CH_Afrique;OK;>45T;2026-01-18 15:19 CET
+R03;ETH Price USD;ECONOMIE;🟢;3.340;📊;✅;;OK;>3000;2026-01-18 15:19 CET
+R10;VIX 1D;ECONOMIE;🟢;15.86;📊;✅;;OK;>20;2026-01-18 15:19 CET
+R12;Fear&Greed Index;ECONOMIE;🟢;49;🟢 NEUTRE;🚨;;OK;[20, 50];2026-01-18 15:19 CET
+R15;BTC Price USD;ECONOMIE;🟢;95.225;🟢 NORMAL;✅;H8_CRYPTO;OK;[85000, 100000];2026-01-18 15:19 CET
+R53;Tariff Vote %R;ECONOMIE;🟢;MANUEL;📊;📊;;MANUEL;>50%;2026-01-18 15:19 CET
+R56;SSR Model;ECONOMIE;🟢;MANUEL;📊;📊;;MANUEL;>1.0;2026-01-18 15:19 CET
+R57;NUPL;ECONOMIE;🟢;MANUEL;📊;📊;;MANUEL;>0.7;2026-01-18 15:19 CET
+R58;DXY Index;ECONOMIE;🟢;99.38;📊;✅;;OK;>100;2026-01-18 15:19 CET
+R07;VNZ Oil production Mb/d;ENERGIE;🟢;1.1;📊;✅;;OK;>2.0 Mb/d;2026-01-18 15:19 CET
+R09;Brent Crude Oil Spot Price $/bbl;ENERGIE;🟢;64.13;📊;🚨;;OK;>60;2026-01-18 15:19 CET
+R13;OPEC+ Compliance %;ENERGIE;🟢;92;📊;🚨;;OK;>85%;2026-01-18 15:19 CET
+R201;Énergie Globale IEA TWh;ENERGIE;🟢;32000;📊;🚨;;OK;>30k;2026-01-18 15:19 CET
+R25;Venezuela→China Oil %;ENERGIE;🟢;742;🟢 CNPC VZ DOM;🚨;;OK;>75%;2026-01-18 15:19 CET
+R26;LNG US EU bcm;ENERGIE;🟢;MANUEL;📊;📊;;MANUEL;>50 bcm;2026-01-18 15:19 CET
+R45;Natural Gas Exports to EU bcm;ENERGIE;🟢;MANUEL;📊;📊;;MANUEL;>10;2026-01-18 15:19 CET
+R02;USA/FRA/UK/FRG → UKR/POL/EST/LIT/LAT/FIN → Total TIV;GEOPOLITIQUE;🟢;4638;📊;🚨;H2_OTAN;OK;>4000;2026-01-18 15:19 CET
+R04;PLA Navy 052D/055 destroyers actifs;GEOPOLITIQUE;🟢;370;📊;🚨;;OK;>350;2026-01-18 15:19 CET
+R05;Suez Traffic % détourné;GEOPOLITIQUE;🟢;100;📊;🚨;;OK;>5%;2026-01-18 15:19 CET
+R32_17;Répression GDELT (code 17);GEOPOLITIQUE;🟢;16 | -8.2 | US:18.CN:12.RU:8.FR:5 | 15h;📊;📊;;OK;>10;2026-01-18 15:19 CET
+R32_18;Geo Disputes GDELT (code 18);GEOPOLITIQUE;🟢;N/A (geo 20260116≠20260118);📊;📊;;OK;>50;2026-01-18 15:19 CET
+R33_acled;ACLED Riots Count;GEOPOLITIQUE;🟢;0;📊;✅;;MANUEL;>10;2026-01-18 15:19 CET
+R36;US Carriers Deployed;GEOPOLITIQUE;🟢;7;📊;✅;;OK;>7;2026-01-18 15:19 CET
+R65;Ag Spot USD/oz | Déficit kt/an;METAUX;🟢;89.94;🟢 AG BULL;🚨;H3_CYBER_SUPPLY;OK;>30;2026-01-18 15:19 CET
+R66;Carbonate Li2CO3 CIF $t;METAUX;🟢;159.500;📊;✅;H3_CYBER_SUPPLY;OK;>25k;2026-01-18 15:19 CET
+R67;Nickel LME 3m $/t;METAUX;🟢;14566;⚠️ Ni BAS;✅;H3_CYBER_SUPPLY;OK;>20k;2026-01-18 15:19 CET
+R68;Cobalt LME $/lb;METAUX;🟢;48570;🟢 Co BULL;🚨;H3_CYBER_SUPPLY;OK;>35k;2026-01-18 15:19 CET
+R69;Graphite naturel flake $t;METAUX;🟢;500;⚠️ Gr BAS;✅;H3_CYBER_SUPPLY;OK;>10k;2026-01-18 15:19 CET
+R70;Oxydes terres rares $kg;METAUX;🟢;61;⚠️ REO BAS;✅;H3_CYBER_SUPPLY;OK;>100;2026-01-18 15:19 CET

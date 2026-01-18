@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "Rxx Engine V17.0",
-    "date": "2026-01-18 02:19 CET",
+    "date": "2026-01-18 15:19 CET",
     "validation_type": "ÉPISTÉMIQUE_INTÉGRÉE"
   },
   "idd": {
@@ -28,7 +28,7 @@
     },
     "H5_GDELT": {
       "resultat": "✅",
-      "details": "R32=182.0 événements",
+      "details": "R32=1140.0 événements",
       "condition": "RootCodes disponibles (R32 > 0)"
     },
     "H6_CH_Afrique": {
@@ -103,7 +103,7 @@
     "R01": 48.2,
     "R02": 4638.0,
     "R11": 51.3,
-    "R15": 94.914,
+    "R15": 95.225,
     "R24": 37.63,
     "R81": 450.0,
     "R91": 254.0

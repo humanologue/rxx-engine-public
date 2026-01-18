@@ -1,0 +1,53 @@
+{
+  "date": "20260118",
+  "timestamp": "2026-01-18T12:51:30.492698+00:00",
+  "files_updated": [
+    "rootcodes_7j.csv",
+    "code18_geo_7j.csv",
+    "narrations_code18.csv",
+    "r32_live_20260118.json"
+  ],
+  "data_statistics": {
+    "rootcodes_7j.csv": {
+      "rows": 46,
+      "columns": [
+        "SQLDATE",
+        "EventRootCode",
+        "AvgTone_root",
+        "n_events_root"
+      ],
+      "date_range": {
+        "min": 20260109,
+        "max": 20260118
+      }
+    },
+    "code18_geo_7j.csv": {
+      "rows": 138,
+      "columns": [
+        "SQLDATE",
+        "top_country",
+        "n_events_18",
+        "AvgTone_18",
+        "avg_lat",
+        "avg_long"
+      ],
+      "date_range": {
+        "min": 20260109,
+        "max": 20260118
+      }
+    },
+    "narrations_code18.csv": {
+      "rows": 5,
+      "columns": [
+        "SQLDATE",
+        "Code18_tone",
+        "top_labels"
+      ],
+      "date_range": {
+        "min": 20260114,
+        "max": 20260118
+      }
+    }
+  },
+  "system": "GDELT Data Manager v2.0"
+}

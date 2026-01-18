@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-01-18T12:51:30.492698+00:00",
+  "R32": [
+    "R32_17",
+    "R32_18",
+    "R32_19"
+  ],
+  "R32_date": "20260118",
+  "sql_date": 20260118,
+  "source": "CALCULATED_FROM_HISTORY",
+  "indicators": {
+    "R32_17": 76097,
+    "R32_18": 29937,
+    "R32_20": 627,
+    "R32": 106661
+  },
+  "events_total": 106661,
+  "note": "Données calculées à partir de 46 lignes historiques",
+  "calculation_method": {
+    "r32_18": "avg_code18_events × 10",
+    "r32_17": "r32_18 × 2.54",
+    "r32_20": "r32_18 × 0.02"
+  }
+}

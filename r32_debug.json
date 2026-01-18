@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-01-17T21:05:49.629276",
+  "timestamp": "2026-01-18T14:33:19.498613",
   "result": {
     "node_id": "R32",
-    "gdelt_events_18": 182,
-    "avg_tone_pts": -6.8,
+    "gdelt_events_18": 187,
+    "avg_tone_pts": -6.9,
     "alert_status": "ROUGE",
     "top_countries": [
       [
@@ -28,14 +28,12 @@
       ]
     ],
     "status": "valid_cached_data",
-    "method": "fallback",
-    "validated": "2026-01-17 18:34 CET",
-    "freshness_hours": 24,
+    "method": "dynamic_fallback",
     "source": "cache",
-    "queried_at": "2026-01-17T18:34:19.588720",
-    "timestamp": 1768671259.58872,
-    "cache_note": "Donn\u00e9es statiques TRL6 (quota d\u00e9pass\u00e9)",
-    "cache_age_hours": 2.5
+    "queried_at": "2026-01-18T13:45:37.104910",
+    "timestamp": 1768740337.1049106,
+    "cache_note": "Fallback dynamique TRL6",
+    "cache_age_hours": 0.8
   },
   "execution_time": 0.0
 }
