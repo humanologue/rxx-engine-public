@@ -1,0 +1,32 @@
+{
+  "H1_P4": {
+    "resultat": "✅",
+    "details": "R11=51.3% (40-60%) | R24=€37.63 (25-50€)",
+    "condition": "40% ≤ R11 ≤ 60% ET 25 ≤ R24 ≤ 50"
+  },
+  "H2_OTAN": {
+    "resultat": "✅",
+    "details": "R02=4638.0 > 4000",
+    "condition": "R02 (SIPRI TIV) > 4000"
+  },
+  "H3_CYBER_SUPPLY": {
+    "resultat": "✅",
+    "details": "R00=269.0(>15) R81=450.0(>500) | Battery=4/6 | R66=159.5",
+    "condition": "ZeroDays>15 OR IOCs>500 AND Battery>=4/6"
+  },
+  "H5_GDELT": {
+    "resultat": "✅",
+    "details": "R32=182.0 événements",
+    "condition": "RootCodes disponibles (R32 > 0)"
+  },
+  "H6_CH_Afrique": {
+    "resultat": "✅",
+    "details": "R01=48.2T$ (seuil: >45T) | Battery Bull=4/6",
+    "condition": "PBOC > 45T$ ET Battery Metals bull"
+  },
+  "H11_SCW": {
+    "resultat": "✅",
+    "details": "R71=0.9971B (seuil: ≥0.9B)",
+    "condition": "USD1 ≥ 0.9B$"
+  }
+}

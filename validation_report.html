@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rxx Engine V17.0 - Validation Épistémique</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .🔴 { background-color: #ffcccc; }
+        .🟡 { background-color: #ffffcc; }
+        .🟢 { background-color: #ccffcc; }
+        .🚨 { color: #d32f2f; font-weight: bold; }
+        .✅ { color: #388e3c; }
+        .⚠️ { color: #f57c00; }
+        .📊 { color: #1976d2; }
+        .hypothesis { padding: 10px; margin: 5px 0; border-left: 4px solid; }
+        .hyp-ok { border-left-color: #4caf50; background: #e8f5e9; }
+        .hyp-warn { border-left-color: #ff9800; background: #fff3e0; }
+        .hyp-ko { border-left-color: #f44336; background: #ffebee; }
+        .idd-score { font-size: 48px; font-weight: bold; text-align: center; margin: 20px 0; }
+        .idd-ok { color: #4caf50; }
+        .idd-warn { color: #ff9800; }
+        .idd-ko { color: #f44336; }
+        .battery-metal { display: inline-block; padding: 5px 10px; margin: 2px; border-radius: 4px; }
+        .battery-bull { background: #4caf50; color: white; }
+        .battery-bear { background: #f44336; color: white; }
+        .timestamp { color: #666; font-size: 0.9em; }
+            /* ⬇️ AJOUTEZ ICI LES NOUVEAUX STYLES GDELT ⬇️ */
+        .highlight { font-weight: bold; background-color: #e3f2fd; }
+        .negative { color: #d32f2f; font-weight: bold; }
+        .positive { color: #388e3c; font-weight: bold; }
+        .neutral { color: #666; }
+        .gdelt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 15px; }
+        .gdelt-card { background: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-left: 4px solid #2196f3; }
+        .gdelt-metric { margin: 8px 0; display: flex; justify-content: space-between; }
+        .gdelt-metric .label { font-weight: 600; color: #555; }
+        .gdelt-metric .value { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Rxx Engine V17.0 - Validation Épistémique Intégrée</h1>
+            <p class="timestamp">Généré le: 2026-01-18 02:19 CET</p>
+            <p>Intelligence CARTO/DYNAMO intégrée | 8 hypothèses testées | Matrice Battery Metals</p>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>📈 Indice de Décision Dynamique (IDD)</h2>
+                <div class="idd-score idd-ok">
+                    100.0/100
+                </div>
+                <h3>🟢 ROUTINE OK</h3>
+                <p>Toutes conditions favorables</p>
+                <p>Basé sur 6 hypothèses évaluées</p>
+            </div>
+            
+            <div class="card">
+                <h2>⚡ Matrice Battery Metals</h2>
+                <p><strong>4/6 en bull market</strong> - 🟢 SUPERCYCLE</p>
+                <p><strong>Recommandation:</strong> 🚀 ACCUMULATION AGRESSIVE</p>
+                <div>
+
+                    <span class="battery-metal battery-bull">
+                        Silver: 90$/oz
+                    </span>
+
+                    <span class="battery-metal battery-bear">
+                        Lithium: 160CNY/T
+                    </span>
+
+                    <span class="battery-metal battery-bear">
+                        Nickel: 14566$/t
+                    </span>
+
+                    <span class="battery-metal battery-bull">
+                        Cobalt: 48570$/lb
+                    </span>
+
+                    <span class="battery-metal battery-bull">
+                        Graphite: 500$/t
+                    </span>
+
+                    <span class="battery-metal battery-bull">
+                        Rare Earths: 61$/kg
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>🔍 Hypothèses DYNAMO v2.4</h2>
+
+            <div class="hypothesis hyp-ok">
+                <strong>H1_P4: ✅</strong><br>
+                R11=51.3% (40-60%) | R24=€37.63 (25-50€)<br>
+                <small>40% ≤ R11 ≤ 60% ET 25 ≤ R24 ≤ 50</small>
+            </div>
+
+            <div class="hypothesis hyp-ok">
+                <strong>H2_OTAN: ✅</strong><br>
+                R02=4638.0 > 4000<br>
+                <small>R02 (SIPRI TIV) > 4000</small>
+            </div>
+
+            <div class="hypothesis hyp-ok">
+                <strong>H3_CYBER_SUPPLY: ✅</strong><br>
+                R00=269.0(>15) R81=450.0(>500) | Battery=4/6 | R66=159.5<br>
+                <small>ZeroDays>15 OR IOCs>500 AND Battery>=4/6</small>
+            </div>
+
+            <div class="hypothesis hyp-ok">
+                <strong>H5_GDELT: ✅</strong><br>
+                R32=182.0 événements<br>
+                <small>RootCodes disponibles (R32 > 0)</small>
+            </div>
+
+            <div class="hypothesis hyp-ok">
+                <strong>H6_CH_Afrique: ✅</strong><br>
+                R01=48.2T$ (seuil: >45T) | Battery Bull=4/6<br>
+                <small>PBOC > 45T$ ET Battery Metals bull</small>
+            </div>
+
+            <div class="hypothesis hyp-ok">
+                <strong>H11_SCW: ✅</strong><br>
+                R71=0.9971B (seuil: ≥0.9B)<br>
+                <small>USD1 ≥ 0.9B$</small>
+            </div>
+
+        </div>
+        
+        <div class="card">
+            <h2>🎯 Valeurs Critiques avec Évaluation Contextuelle</h2>
+            <table>
+                <tr>
+                    <th>Nœud</th>
+                    <th>Valeur</th>
+                    <th>Statut</th>
+                    <th>Évaluation</th>
+                    <th>Hypothèse</th>
+                </tr>
+
+                <tr>
+                    <td><strong>R00</strong></td>
+                    <td>269</td>
+                    <td>📊</td>
+                    <td>🚨</td>
+                    <td>H3_CYBER_SUPPLY</td>
+                </tr>
+
+                <tr>
+                    <td><strong>R01</strong></td>
+                    <td>48.2</td>
+                    <td>🟢 PBOC STABLE</td>
+                    <td>✅</td>
+                    <td>H6_CH_Afrique</td>
+                </tr>
+
+                <tr>
+                    <td><strong>R02</strong></td>
+                    <td>4638</td>
+                    <td>📊</td>
+                    <td>🚨</td>
+                    <td>H2_OTAN</td>
+                </tr>
+
+                <tr>
+                    <td><strong>R11</strong></td>
+                    <td>51.3</td>
+                    <td>✅ STABLE</td>
+                    <td>🚨</td>
+                    <td>H1_P4</td>
+                </tr>
+
+                <tr>
+                    <td><strong>R15</strong></td>
+                    <td>94.914</td>
+                    <td>🟢 NORMAL</td>
+                    <td>✅</td>
+                    <td>H8_CRYPTO</td>
+                </tr>
+
+                <tr>
+                    <td><strong>R24</strong></td>
+                    <td>37.63</td>
+                    <td>✅ BAS</td>
+                    <td>🚨</td>
+                    <td>H1_P4</td>
+                </tr>
+
+                <tr>
+                    <td><strong>R81</strong></td>
+                    <td>450</td>
+                    <td>📊</td>
+                    <td>✅</td>
+                    <td>H3_CYBER_SUPPLY</td>
+                </tr>
+
+                <tr>
+                    <td><strong>R91</strong></td>
+                    <td>254</td>
+                    <td>✅ BAS</td>
+                    <td>✅</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><strong>R65</strong></td>
+                    <td>89.94</td>
+                    <td>🟢 AG BULL</td>
+                    <td>🚨</td>
+                    <td>H3_CYBER_SUPPLY</td>
+                </tr>
+
+                <tr>
+                    <td><strong>R71</strong></td>
+                    <td>0.9971</td>
+                    <td>⚠️ USD1 BAS</td>
+                    <td>✅</td>
+                    <td>H9_TECH_WAR</td>
+                </tr>
+
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>📋 Statistiques Générales</h2>
+            <p><strong>Valeurs numériques extraites:</strong> 50/65</p>
+            <p><strong>Hypothèses validées:</strong> 6/6</p>
+            <p><strong>Battery Metals en bull:</strong> 4/6</p>
+            <p><strong>Statut global:</strong> <span class="✅">🟢 OPTIMAL</span></p>
+        </div>
+        
+        <div class="timestamp">
+            <p>Rxx Engine V17.0 - Intelligence épistémique intégrée</p>
+            <p>Données temps réel + Validation CARTO/DYNAMO</p>
+        </div>
+    </div>
+</body>
+</html>

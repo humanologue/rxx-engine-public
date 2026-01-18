@@ -1,0 +1,283 @@
+[02:19:55] 🚀 ENGINE V17.0 - Démarrage 2026-01-18 02:19 CET
+[02:19:55] 🚀 R00: python -c "from r00_zeroday import scrape_r00; r=scrape_r00()[0]; print(f'R00={r...
+[02:19:57] 📤 R00 sortie: R00=269 | Fresh=0h LIVE
+[02:19:57] 🔍 R00 extraction depuis: 'R00=269 | Fresh=0h LIVE'
+[02:19:57]   ✓ Pattern étendu: 269
+[02:19:57] 🚀 R01: python -c "from r01_pboc import scrape_r01; r=scrape_r01()[0]; print(f'R01 PBOC=...
+[02:19:58] 📤 R01 sortie: R01 PBOC=48.2T CNY ($9.2T) | success
+[02:19:58] 🔍 R01 extraction depuis: 'R01 PBOC=48.2T CNY ($9.2T) | success'
+[02:19:58]   ✓ Pattern étendu: 48.2
+[02:19:58] 🚀 R02: python -c "from r02_sipri import scrape_r02; r=scrape_r02()[0]; print(f'R02 TIV=...
+[02:19:58] 📤 R02 sortie: R02 TIV=4638 | USA/FRA/UK/DEU→UKR/POL/EST/LIT/LAT/FIN | USA-UKR=2906
+[02:19:58] 🔍 R02 extraction depuis: 'R02 TIV=4638 | USA/FRA/UK/DEU→UKR/POL/EST/LIT/LAT/FIN | USA-UKR=2906'
+[02:19:58]   ✓ Pattern étendu: 4638
+[02:19:58] 🚀 R03: python -c "from r03_ethereum import scrape_r03; r=scrape_r03()[0]; print(f'R03 E...
+[02:19:59] 📤 R03 sortie: R03 ETH=$3,301
+[02:19:59] 🔍 R03 extraction depuis: 'R03 ETH=$3,301'
+[02:19:59]   ✓ Pattern étendu: 3.301
+[02:19:59] 🚀 R04: python -c "from r04_usni import scrape_r04; r=scrape_r04()[0]; print(f'R04 PLA={...
+[02:19:59] 📤 R04 sortie: R04 PLA=370 | CV=3 DDG=36 FFG=48
+[02:19:59] 🔍 R04 extraction depuis: 'R04 PLA=370 | CV=3 DDG=36 FFG=48'
+[02:19:59]   ✓ Pattern étendu: 370
+[02:19:59] 🚀 R05: python -c "from r05_suez_canal import scrape_r05; print(f'R05 Suez={scrape_r05()...
+[02:20:00] 📤 R05 sortie: R05 Suez=100 navires/jour | Fresh=24h
+[02:20:00] 🔍 R05 extraction depuis: 'R05 Suez=100 navires/jour | Fresh=24h'
+[02:20:00]   ✓ Pattern étendu: 100
+[02:20:00] 🚀 R06: python -c "from r06_napoleon import scrape_r06; print(f'R06 Napoléon={scrape_r06...
+[02:20:01] 📤 R06 sortie: R06 Napoléon=746€ AuCOFFRE
+[02:20:01] 🔍 R06 extraction depuis: 'R06 Napoléon=746€ AuCOFFRE'
+[02:20:01]   ✓ Pattern étendu: 746
+[02:20:01] 🚀 R07: python -c "from r07_vz_oil import scrape_r07; print(f'R07 VZ Oil={scrape_r07()} ...
+[02:20:01] 📤 R07 sortie: R07 VZ Oil=1.1 Mbpd OPEC
+[02:20:01] 🔍 R07 extraction depuis: 'R07 VZ Oil=1.1 Mbpd OPEC'
+[02:20:01]   ✓ Pattern étendu: 1.1
+[02:20:01] 🚀 R09: python -c "from r09_brent import scrape_r09; r=scrape_r09()[0]; print(f'R09 Bren...
+[02:20:02] 📤 R09 sortie: R09 Brent=$64.13 via tradingeconomics_regex
+[02:20:02] 🔍 R09 extraction depuis: 'R09 Brent=$64.13 via tradingeconomics_regex'
+[02:20:02]   ✓ Pattern étendu: 64.13
+[02:20:02] 🚀 R10: python -c "from r10_vix_cboe import scrape_r10; print(f'R10 VIX={scrape_r10()}')...
+[02:20:03] 📤 R10 sortie: 15.86
+R10 VIX=15.86
+[02:20:03] 🔍 R10 extraction depuis: '15.86
+R10 VIX=15.86'
+[02:20:03]   ✓ Pattern étendu: 15.86
+[02:20:03] 🚀 R11: python -c "from r11_gas_storage import scrape_r11; r=scrape_r11()[0]; print(f'R1...
+[02:20:04] 📤 R11 sortie: [R11] ✅ Cache valide (8.6h)
+R11=51.3% TRL9 | Fresh=1d | Validé=2026-01-17 17:43 CET | OK
+[02:20:04] 🔍 R11 extraction depuis: '[R11] ✅ Cache valide (8.6h)
+R11=51.3% TRL9 | Fresh=1d | Validé=2026-01-17 17:43 CET | OK'
+[02:20:04]   ✓ Pattern étendu: 51.3
+[02:20:04] 🚀 R125: python -c "from r125_pathogenes_ecdc import scrape_r125; print(f'R125 Pathogènes...
+[02:20:04] 📤 R125 sortie: R125 Pathogènes=14 signalements/24h | Fresh=24h
+[02:20:04] 🔍 R125 extraction depuis: 'R125 Pathogènes=14 signalements/24h | Fresh=24h'
+[02:20:04]   ✓ Pattern étendu: 14
+[02:20:04] 🚀 R127: python -c "from r127_niveau_mer_psmsl import scrape_r127; r=scrape_r127(); print...
+[02:20:05] 📤 R127 sortie: R127=4.2 mm/an | Stations=0 | PSMSL v2025.1 | 0 stations | 1960-2025 trend | Fresh=24h
+[02:20:05] 🔍 R127 extraction depuis: 'R127=4.2 mm/an | Stations=0 | PSMSL v2025.1 | 0 stations | 1960-2025 trend | Fresh=24h'
+[02:20:05]   ✓ Pattern étendu: 4.2
+[02:20:05] 🚀 R12: python -c "from r12_fear_greed import scrape_r12; r=scrape_r12()[0]; print(f'R12...
+[02:20:06] 📤 R12 sortie: R12 FGI=49 | success
+[02:20:06] 🔍 R12 extraction depuis: 'R12 FGI=49 | success'
+[02:20:06]   ✓ Pattern étendu: 49
+[02:20:06] 🚀 R13: python -c "from r13_opec_global import scrape_r13; print(f'R13 OPEC={scrape_r13(...
+[02:20:06] 📤 R13 sortie: R13 OPEC=92% compliance
+[02:20:06] 🔍 R13 extraction depuis: 'R13 OPEC=92% compliance'
+[02:20:06]   ✓ Pattern étendu: 92
+[02:20:06] 🚀 R15: python -c "from r15_bitcoin import scrape_r15; r=scrape_r15()[0]; print(f'R15 BT...
+[02:20:07] 📤 R15 sortie: R15 BTC=$94,914 | Δ-0.5% | MC $1.9T
+[02:20:07] 🔍 R15 extraction depuis: 'R15 BTC=$94,914 | Δ-0.5% | MC $1.9T'
+[02:20:07]   ✓ Pattern étendu: 94.914
+[02:20:07] 🚀 R16: python -c "from r16_libya_oil import scrape_r16; print(f'R16 Libye={scrape_r16()...
+[02:20:07] 📤 R16 sortie: R16 Libye=1.2 Mbpd OPEC
+[02:20:07] 🔍 R16 extraction depuis: 'R16 Libye=1.2 Mbpd OPEC'
+[02:20:07]   ✓ Pattern étendu: 1.2
+[02:20:07] 🚀 R17: python -c "from r17_redsea_pirates import scrape_r17; r=scrape_r17(); print(f'R1...
+[02:20:09] 📤 R17 sortie: R17 RedSea=10 tankers/24h | Fresh=24h
+[02:20:09] 🔍 R17 extraction depuis: 'R17 RedSea=10 tankers/24h | Fresh=24h'
+[02:20:09]   ✓ Pattern étendu: 10
+[02:20:09] 🚀 R200: python -c "from r200_climat_era5 import scrape_r200; r=scrape_r200(); print(f'R2...
+[02:20:11] 📤 R200 sortie: R200=1,18°C | Sources=0 | Method=era5_consensus_2026 | Fresh=24h
+[02:20:11] 🔍 R200 extraction depuis: 'R200=1,18°C | Sources=0 | Method=era5_consensus_2026 | Fresh=24h'
+[02:20:11]   ✓ Pattern étendu: 1.18
+[02:20:11] 🚀 R201: python -c "from r201_energie_iea import scrape_r201; print(f'R201 Énergie={scrap...
+[02:20:12] 📤 R201 sortie: R201 Énergie=32000 TWh/an | Fresh=24h
+[02:20:12] 🔍 R201 extraction depuis: 'R201 Énergie=32000 TWh/an | Fresh=24h'
+[02:20:12]   ✓ Pattern étendu: 32000
+[02:20:12] 🚀 R24: python -c "from r24_ttf import scrape_r24; r=scrape_r24()[0]; print(f'R24 TTF=€{...
+[02:20:13] 📤 R24 sortie: R24 TTF=€37.63/MWh | success
+[02:20:13] 🔍 R24 extraction depuis: 'R24 TTF=€37.63/MWh | success'
+[02:20:13]   ✓ Pattern étendu: 37.63
+[02:20:13] 🚀 R25: python -c "from r25_vnz_chine import scrape_r25; print(f'R25 VZ→Chine={scrape_r2...
+[02:20:13] 📤 R25 sortie: R25 VZ→Chine=742 kbpd | Fresh=24h
+[02:20:13] 🔍 R25 extraction depuis: 'R25 VZ→Chine=742 kbpd | Fresh=24h'
+[02:20:13]   ✓ Pattern étendu: 742
+[02:20:13] 🚀 R28: python -c "from r28_seismic_m6 import scrape_r28; print(f'R28 M6+={scrape_r28()}...
+[02:20:14] 📤 R28 sortie: R28 M6+=2 événements/30j | Fresh=24h
+[02:20:14] 🔍 R28 extraction depuis: 'R28 M6+=2 événements/30j | Fresh=24h'
+[02:20:14]   ✓ Pattern étendu: 2
+[02:20:14] 🚀 R32_17: python -c "from r32_17_repression import scrape_r32_17; print(f'R32_17={scrape_r...
+[02:20:14] 📤 R32_17 sortie: R32_17=18 | -8.2 | US:18,CN:12,RU:8,FR:5 | 26h
+[02:20:14] 🔍 R32_17 extraction depuis: 'R32_17=18 | -8.2 | US:18,CN:12,RU:8,FR:5 | 26h'
+[02:20:14]   ✓ Pattern étendu: 18 | -8.2 | US:18.CN:12.RU:8.FR:5 | 26h
+[02:20:14] 🚀 R32_18: python -c "from r32_18_geo import scrape_r32_18_geo; print(f'R32_18={scrape_r32_...
+[02:20:15] 📤 R32_18 sortie: [R32_18] 📅 Données pour 20260117: 19 lignes
+[R32_18] Dernier jour: 20260117
+[R32_18] Événements jour: 2,065 (total 9j: 17,092)
+[R32_18] Top pays jour: US:653,IR:194,VE:136,IS:134,UP:121
+R32_18=2065 | -5.9 | US:653,IR:194,VE:136,IS:134,UP:121 | 26h
+[02:20:15] 🔍 R32_18 extraction depuis: '[R32_18] 📅 Données pour 20260117: 19 lignes
+[R32_18] Dernier jour: 20260117
+[R32_18] Événements jour: 2,065 (total 9j: 17,092)
+[R32_18] Top pays jour: US:653,IR:194,VE:136,IS:134,UP:121
+R32_18=2065 | -5.9 | US:653,IR:194,VE:136,IS:134,UP:121 | 26h'
+[02:20:15]   ✓ Pattern étendu: 2065 | -5.9 | US:653.IR:194.VE:136.IS:134.UP:121 | 26h
+[02:20:15] 🚀 R32_20: python -c "from r32_20_manif import scrape_r32_20; print(f'R32_20={scrape_r32_20...
+[02:20:15] 📤 R32_20 sortie: R32_20=956 | -4.7 | 26h
+[02:20:15] 🔍 R32_20 extraction depuis: 'R32_20=956 | -4.7 | 26h'
+[02:20:15]   ✓ Pattern étendu: 956 | -4.7 | 26h
+[02:20:15] 🚀 R32: python -c "from r32_gdelt import scrape_r32; r=scrape_r32()[0]; top3 = \",\".joi...
+[02:20:16] 📤 R32 sortie: ============================================================
+DÉBUT SCRIPT R32 - DEBUG MODE
+Python: 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]
+Date: 2026-01-18 02:20:16
+============================================================
+[INFO] Répertoire courant: C:\hmn_dev\RxxEngine
+[INFO] Credentials path: C:\hmn_dev\RxxEngine\eng-serenity-198210-640cef1d71d7.json
+[INFO] Credentials exists: True
+[INFO] Cache dir: C:\hmn_dev\RxxEngine\cache
+[INFO] Cache dir exists: True
+
+============================================================
+SCRAPE_R32() - DÉBUT
+============================================================
+
+[ÉTAPE 1] Vérification cache...
+[DEBUG] Fonction load_cache() appelée
+[DEBUG] Cache file: C:\hmn_dev\RxxEngine\cache\r32_gdelt_cache.pkl
+[DEBUG] Cache exists: True
+[DEBUG] Tentative d'ouverture du cache...
+[DEBUG] Cache chargé: 1 éléments
+[DEBUG] Timestamp cache: 1768671259.58872
+[DEBUG] Âge cache: 7.8 heures
+[DEBUG] Cache valide (<12h)
+[DEBUG] Fonction validate_gdelt_data() appelée
+[DEBUG] Data reçu: <class 'list'>
+[DEBUG] Champs disponibles: ['node_id', 'gdelt_events_18', 'avg_tone_pts', 'alert_status', 'top_countries', 'status', 'method', 'validated', 'freshness_hours', 'source', 'queried_at', 'timestamp', 'cache_note']
+[DEBUG] Validation OK: 182 événements, tone: -6.8
+[INFO] Cache valide trouvé
+[INFO] Utilisation cache (7.8h)
+R32=182 | -6.8pts | US,FR,DE
+[02:20:16] 🔍 R32 extraction depuis: '============================================================
+DÉBUT SCRIPT R32 - DEBUG MODE
+Python: 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]
+Date: 2026-01-18 02:20:16
+============================================================
+[INFO] Répertoire courant: C:\hmn_dev\RxxEngine
+[INFO] Credentials path: C:\hmn_dev\RxxEngine\eng-serenity-198210-640cef1d71d7.json
+[INFO] Credentials exists: True
+[INFO] Cache dir: C:\hmn_dev\RxxEngine\cache
+[INFO] Cache dir exists: True
+
+============================================================
+SCRAPE_R32() - DÉBUT
+============================================================
+
+[ÉTAPE 1] Vérification cache...
+[DEBUG] Fonction load_cache() appelée
+[DEBUG] Cache file: C:\hmn_dev\RxxEngine\cache\r32_gdelt_cache.pkl
+[DEBUG] Cache exists: True
+[DEBUG] Tentative d'ouverture du cache...
+[DEBUG] Cache chargé: 1 éléments
+[DEBUG] Timestamp cache: 1768671259.58872
+[DEBUG] Âge cache: 7.8 heures
+[DEBUG] Cache valide (<12h)
+[DEBUG] Fonction validate_gdelt_data() appelée
+[DEBUG] Data reçu: <class 'list'>
+[DEBUG] Champs disponibles: ['node_id', 'gdelt_events_18', 'avg_tone_pts', 'alert_status', 'top_countries', 'status', 'method', 'validated', 'freshness_hours', 'source', 'queried_at', 'timestamp', 'cache_note']
+[DEBUG] Validation OK: 182 événements, tone: -6.8
+[INFO] Cache valide trouvé
+[INFO] Utilisation cache (7.8h)
+R32=182 | -6.8pts | US,FR,DE'
+[02:20:16]   ✓ Pattern étendu: 182
+[02:20:16] 🚀 R36: python -c "from r36_usni_carriers import scrape_r36; print(f'R36 USNI={scrape_r3...
+[02:20:16] 📤 R36 sortie: R36 USNI=7
+[02:20:16] 🔍 R36 extraction depuis: 'R36 USNI=7'
+[02:20:16]   ✓ Pattern étendu: 7
+[02:20:16] 🚀 R58: python -c "from r58_dxy import scrape_r58; r=scrape_r58()[0]; print(f'R58 DXY={r...
+[02:20:17] 📤 R58 sortie: R58 DXY=99.38 yahoo_json_api
+[02:20:17] 🔍 R58 extraction depuis: 'R58 DXY=99.38 yahoo_json_api'
+[02:20:17]   ✓ Pattern étendu: 99.38
+[02:20:17] 🚀 R65: python -c "from r65_silver import scrape_r65; print(f'R65 Ag=${scrape_r65()}')"...
+[02:20:19] 📤 R65 sortie: 89.94
+R65 Ag=$89.94
+[02:20:19] 🔍 R65 extraction depuis: '89.94
+R65 Ag=$89.94'
+[02:20:19]   ✓ Pattern étendu: 89.94
+[02:20:19] 🚀 R65_pv: python -c "from r65_silver_pv import scrape_r65; r=scrape_r65()[0]; print(f'R65 ...
+[02:20:19] 📤 R65_pv sortie: R65 Ag PV=560kt | Total=1700kt | PV=33% | Fresh=-56d
+[02:20:19] 🔍 R65_pv extraction depuis: 'R65 Ag PV=560kt | Total=1700kt | PV=33% | Fresh=-56d'
+[02:20:19]   ✓ Pattern étendu: 560
+[02:20:19] 🚀 R66: python -c "from r66_lithium import scrape_r66; print(f'R66 Li={scrape_r66()}')"...
+[02:20:21] 📤 R66 sortie: 159,500
+R66 Li=159,500
+[02:20:21] 🔍 R66 extraction depuis: '159,500
+R66 Li=159,500'
+[02:20:21]   ✓ Pattern étendu: 159.500
+[02:20:21] 🚀 R66_pv: python -c "from r66_lithium_pv import scrape_r66; r=scrape_r66()[0]; print(f'R66...
+[02:20:21] 📤 R66_pv sortie: R66 Li=180kt | Déficit=-440kt | AU=82kt | Fresh=10d NON-RT
+[02:20:21] 🔍 R66_pv extraction depuis: 'R66 Li=180kt | Déficit=-440kt | AU=82kt | Fresh=10d NON-RT'
+[02:20:21]   ✓ Pattern étendu: 180
+[02:20:21] 🚀 R67: python -c "from r67_nickel import scrape_r67; print(f'R67 Ni=${scrape_r67()}')"...
+[02:20:22] 📤 R67 sortie: R67 Ni=$14566
+[02:20:22] 🔍 R67 extraction depuis: 'R67 Ni=$14566'
+[02:20:22]   ✓ Pattern étendu: 14566
+[02:20:22] 🚀 R68: python -c "from r68_cobalt import scrape_r68; print(f'R68 Co=${scrape_r68()}')"...
+[02:20:23] 📤 R68 sortie: R68 Co=$48570
+[02:20:23] 🔍 R68 extraction depuis: 'R68 Co=$48570'
+[02:20:23]   ✓ Pattern étendu: 48570
+[02:20:23] 🚀 R69: python -c "from r69_graphite import scrape_r69; print(f'R69 Graphite=${scrape_r6...
+[02:20:23] 📤 R69 sortie: R69 Graphite=$500
+[02:20:23] 🔍 R69 extraction depuis: 'R69 Graphite=$500'
+[02:20:23]   ✓ Pattern étendu: 500
+[02:20:23] 🚀 R70: python -c "from r70_rare_earths import scrape_r70; print(f'R70 RE={scrape_r70()}...
+[02:20:25] 📤 R70 sortie: 61
+R70 RE=61$/kg
+[02:20:25] 🔍 R70 extraction depuis: '61
+R70 RE=61$/kg'
+[02:20:25]   ✓ Pattern étendu: 61
+[02:20:25] 🚀 R71: python -c "from r71_usd1_wlfi import scrape_r71; r=scrape_r71()[0]; print(f'R71 ...
+[02:20:26] 📤 R71 sortie: R71 USD1=$0.9971
+[02:20:26] 🔍 R71 extraction depuis: 'R71 USD1=$0.9971'
+[02:20:26]   ✓ Pattern étendu: 0.9971
+[02:20:26] 🚀 R74: python -c "from r74_forets_fao import scrape_r74; r=scrape_r74(); print(f'R74 Fo...
+[02:20:27] 📤 R74 sortie: R74 Forêts=10.9 Mha/an | 2015-2025 | FRA 2025: -10.9Mha/an vs -13.6Mha/an (2010-2015) | Fresh=81j
+[02:20:27] 🔍 R74 extraction depuis: 'R74 Forêts=10.9 Mha/an | 2015-2025 | FRA 2025: -10.9Mha/an vs -13.6Mha/an (2010-2015) | Fresh=81j'
+[02:20:27]   ✓ Pattern étendu: 10.9
+[02:20:27] 🚀 R76: python -c "from r76_water import scrape_r76; r=scrape_r76()[0]; print(f'R76 Eau=...
+[02:20:27] 📤 R76 sortie: R76 Eau=3800km³ | Access=9.5% | Fresh=60d NON-RT | Stress=2.4B
+[02:20:27] 🔍 R76 extraction depuis: 'R76 Eau=3800km³ | Access=9.5% | Fresh=60d NON-RT | Stress=2.4B'
+[02:20:27]   ✓ Pattern étendu: 3800
+[02:20:27] 🚀 R81: python -c "from r81_ioc import scrape_r81; r=scrape_r81()[0]; print(f'R81={r[\"i...
+[02:20:27] 📤 R81 sortie: R81=450 | Fresh=1h | Method=vt_public_html
+[02:20:27] 🔍 R81 extraction depuis: 'R81=450 | Fresh=1h | Method=vt_public_html'
+[02:20:27]   ✓ Pattern étendu: 450
+[02:20:27] 🚀 R82: python -c "from r82_shadowserver import scrape_r82; print(f'R82 CVEs={scrape_r82...
+[02:20:29] 📤 R82 sortie: R82 CVEs=12/24h
+[02:20:29] 🔍 R82 extraction depuis: 'R82 CVEs=12/24h'
+[02:20:29]   ✓ Pattern étendu: 12
+[02:20:29] 🚀 R84: python -c "from r84_cereals_usda import scrape_r84; print(scrape_r84())"...
+[02:20:40] 📤 R84 sortie: 2864
+[02:20:40] 🔍 R84 extraction depuis: '2864'
+[02:20:40]   ✓ Pattern étendu: 2864
+[02:20:41] 🚀 R85: python -c "from r85_soil_degradation import scrape_r85; r=scrape_r85(); print(f'...
+[02:20:42] 📤 R85 sortie: R85=1.7 | Sources=1 | Method=sofa2025_composite_1 | Pop=1.7B
+[02:20:42] 🔍 R85 extraction depuis: 'R85=1.7 | Sources=1 | Method=sofa2025_composite_1 | Pop=1.7B'
+[02:20:42]   ✓ Pattern étendu: 1.7
+[02:20:42] 🚀 R91: python -c "from r91_isc import scrape_r91; r=scrape_r91()[0]; print(f'R91={r[\"n...
+[02:20:43] 📤 R91 sortie: R91=254 | Fresh=6h | Method=sans_csv
+[02:20:43] 🔍 R91 extraction depuis: 'R91=254 | Fresh=6h | Method=sans_csv'
+[02:20:43]   ✓ Pattern étendu: 254
+[02:20:43] 🚀 R92: python -c "from r92_dns_c2 import scrape_r92; r=scrape_r92(); print(f'R92={r[\"f...
+[02:20:45] 📤 R92 sortie: R92=100 | Sources=1 | Method=multi-source_avg_1s | Fresh=6h
+[02:20:45] 🔍 R92 extraction depuis: 'R92=100 | Sources=1 | Method=multi-source_avg_1s | Fresh=6h'
+[02:20:45]   ✓ Pattern étendu: 100
+[02:20:45] 🚀 R95: python -c "from r95_ttp import scrape_r95; r=scrape_r95()[0]; print(f'R95={r[\"n...
+[02:20:45] 📤 R95 sortie: R95=1 | Fresh=2h LIVE
+[02:20:45] 🔍 R95 extraction depuis: 'R95=1 | Fresh=2h LIVE'
+[02:20:45]   ✓ Pattern étendu: 1
+[02:20:45] 🚀 R96: python -c "from r96_hibp_breaches import scrape_r96; print(f'R96 HIBP={scrape_r9...
+[02:20:46] 📤 R96 sortie: R96 HIBP=156 breaches/24h | Fresh=24h
+[02:20:46] 🔍 R96 extraction depuis: 'R96 HIBP=156 breaches/24h | Fresh=24h'
+[02:20:46]   ✓ Pattern étendu: 156
+[02:20:46] 🚀 R97: python -c "from r97_yara_rules import scrape_r97; print(f'R97 YARA={scrape_r97()...
+[02:20:47] 📤 R97 sortie: R97 YARA=187 | Fresh=24h
+[02:20:47] 🔍 R97 extraction depuis: 'R97 YARA=187 | Fresh=24h'
+[02:20:47]   ✓ Pattern étendu: 187
+[02:20:47] 🚀 R98: python -c "from r98_imd_drought import scrape_r98; r=scrape_r98(); print(f'R98={...
+[02:21:03] 📤 R98 sortie: R98=14.0% | Sources=0 | Method=imd_rabi_consensus_2026 | LPA=86.0%)
+[02:21:03] 🔍 R98 extraction depuis: 'R98=14.0% | Sources=0 | Method=imd_rabi_consensus_2026 | LPA=86.0%)'
+[02:21:03]   ✓ Pattern étendu: 14.0
+[02:21:03] 🚀 R99: python -c "from r99_moussons_imd import scrape_r99; r=scrape_r99(); print(f'R99=...
+[02:21:07] 📤 R99 sortie: R99=100.0% LPA | Sources=0 | Method=default_normal | Fresh=24h
+[02:21:07] 🔍 R99 extraction depuis: 'R99=100.0% LPA | Sources=0 | Method=default_normal | Fresh=24h'
+[02:21:07]   ✓ Pattern étendu: 100.0

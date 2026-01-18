@@ -1,0 +1,65 @@
+node_id;donnee;domaine;priorite;valeur_live;statut_exec;script_utilise;output_tronque;seuil;timestamp
+R200;Climat ERA5 Anomalie °C;AGRI_ENV;🔴;1.18;OK;r200_climat_era5.py;R200=1,18°C | Sources=0 | Method=era5_consensus_2026 | Fresh=24h;>1.5;2026-01-17 04:11 CET
+R00;Zero-Days CVE (CISA/NVD);CYBER;🔴;269;OK;r00_zeroday.py;R00=269 | Fresh=0h LIVE;>15;2026-01-17 04:11 CET
+R81;IOC VirusTotal (Top Threats);CYBER;🔴;450;OK;r81_ioc.py;R81=450 | Fresh=1h | Method=vt_public_html;>500;2026-01-17 04:11 CET
+R91;Netflow ERT Iran (Shadowserver);CYBER;🔴;254;OK;r91_isc.py;R91=254 | Fresh=6h | Method=sans_csv;>100k;2026-01-17 04:11 CET
+R92;DNS C2 Domains Count;CYBER;🔴;100;OK;r92_dns_c2.py;R92=100 | Sources=1 | Method=multi-source_avg_1s | Fresh=6h;>50;2026-01-17 04:11 CET
+R95;MITRE ATT&CK TTPs (New);CYBER;🔴;1;OK;r95_ttp.py;R95=1 | Fresh=2h LIVE;>5;2026-01-17 04:11 CET
+R96;HIBP Breaches Count;CYBER;🔴;156;OK;r96_hibp_breaches.py;R96 HIBP=156 breaches/24h | Fresh=24h;>100;2026-01-17 04:11 CET
+R97;Yara Rules New;CYBER;🔴;187;OK;r97_yara_rules.py;R97 YARA=187 | Fresh=24h;>50;2026-01-17 04:11 CET
+R11;LNG EU imports Russia %total;ENERGIE;🔴;19.8;OK;r11_gas_storage.py;R11=19.8% TRL9 | Fresh=6d | Validé=2026-01-10 12:16 CET | ALERTE;>15%;2026-01-17 04:11 CET
+R24;TTF Last Price €/MWh;ENERGIE;🔴;37.63;OK;r24_ttf.py;R24 TTF=€37.63/MWh | success;>40;2026-01-17 04:11 CET
+R32_20;Manifestations Iran GDELT (code 20);GEOPOLITIQUE;🔴;19;OK;r32_20_manif.py;"DEBUG codes: {'19': 8, '17': 8, '18': 8, '16': 8, '20': 8}
+0 | -4.5 | FR:23,US:15,DE:12 | 28h";>5;2026-01-17 04:11 CET
+R125;Pathogènes ECDC Count;AGRI_ENV;🟡;14;OK;r125_pathogenes_ecdc.py;R125 Pathogènes=14 signalements/24h | Fresh=24h;>10;2026-01-17 04:11 CET
+R127;Niveau Mer PSMSL mm/an;AGRI_ENV;🟡;4.2;OK;r127_niveau_mer_psmsl.py;R127=4.2 mm/an | Stations=0 | PSMSL v2025.1 | 0 stations | 1960-2025 trend | Fresh=24h;>4;2026-01-17 04:11 CET
+R74;Forêts FAO %perte/an;AGRI_ENV;🟡;10.9;OK;r74_forets_fao.py;R74 Forêts=10.9 Mha/an | 2015-2025 | FRA 2025: -10.9Mha/an vs -13.6Mha/an (2010-2015) | Fresh=81j;>1%;2026-01-17 04:11 CET
+R76;Eau Douce → Disponibilité Mondiale → km³/an;AGRI_ENV;🟡;3800;OK;r76_water.py;R76 Eau=3800km³ | Access=9.5% | Fresh=60d NON-RT | Stress=2.4B;>3000;2026-01-17 04:11 CET
+R85;Dégradation sols ha/an;AGRI_ENV;🟡;1.7;OK;r85_soil_degradation.py;R85=1.7 | Sources=1 | Method=sofa2025_composite_1 | Pop=1.7B;>1M;2026-01-17 04:11 CET
+R82;Surveillance Firms (surveillancewatch.io);CYBER;🟡;12;OK;r82_shadowserver.py;R82 CVEs=12/24h;>500;2026-01-17 04:11 CET
+R83;Pays ciblés (surveillancewatch.io);CYBER;🟡;MANUEL;MANUEL;;LIVE_MANUAL;>150;2026-01-17 04:11 CET
+R84;Financements surveillance (surveillancewatch.io);CYBER;🟡;2864;OK;r84_cereals_usda.py;2864;>50;2026-01-17 04:11 CET
+R06;Or Napoléon €/pièce;ECONOMIE;🟡;746;OK;r06_napoleon.py;R06 Napoléon=746€ AuCOFFRE;>900€;2026-01-17 04:11 CET
+R23;BTC/S&P Liquidité Ratio;ECONOMIE;🟡;MANUEL;MANUEL;;LIVE_MANUAL;>1.0;2026-01-17 04:11 CET
+R54;Senate Trade Vote;ECONOMIE;🟡;MANUEL;MANUEL;;LIVE_MANUAL;>60%;2026-01-17 04:11 CET
+R55;USCC Tariff Score;ECONOMIE;🟡;MANUEL;MANUEL;;LIVE_MANUAL;>70;2026-01-17 04:11 CET
+R59;M2 YoY %;ECONOMIE;🟡;MANUEL;MANUEL;;LIVE_MANUAL;>5%;2026-01-17 04:11 CET
+R71;USD1 Stablecoin Capitalisation $B | Peg Ratio;ECONOMIE;🟡;1.0000;OK;r71_usd1_wlfi.py;R71 USD1=$1.0000;>$3B;2026-01-17 04:11 CET
+R72;USDC Capitalisation $B vs USDT Marketshare %;ECONOMIE;🟡;MANUEL;MANUEL;;LIVE_MANUAL;>$50B;2026-01-17 04:11 CET
+R16;Libya Oil Production Mb/d;ENERGIE;🟡;1.2;OK;r16_libya_oil.py;R16 Libye=1.2 Mbpd OPEC;>1.2;2026-01-17 04:11 CET
+R33;Urban Riots GDELT;GEOPOLITIQUE;🟡;12;OK;r33_acled_riots.py;R33 ACLED=12;>10;2026-01-17 04:11 CET
+R65_pv;Silver PV Demand kt/an;METAUX;🟡;560;OK;r65_silver_pv.py;R65 Ag PV=560kt | Total=1700kt | PV=33% | Fresh=-57d;>10;2026-01-17 04:11 CET
+R66_pv;Lithium PV Demand kt/an;METAUX;🟡;180;OK;r66_lithium_pv.py;R66 Li=180kt | Déficit=-440kt | AU=82kt | Fresh=10d NON-RT;>100;2026-01-17 04:11 CET
+R100;Arctique Extent Mkm²;AGRI_ENV;🟢;MANUEL;MANUEL;;LIVE_MANUAL;<14;2026-01-17 04:11 CET
+R28;metadata.count M6+;AGRI_ENV;🟢;2;OK;r28_seismic_m6.py;R28 M6+=2 événements/30j | Fresh=24h;>1;2026-01-17 04:11 CET
+R98;IMD Drought % déficit;AGRI_ENV;🟢;14.0;OK;r98_imd_drought.py;R98=14.0% | Sources=0 | Method=imd_rabi_consensus_2026 | LPA=86.0%);>10%;2026-01-17 04:11 CET
+R99;Moussons IMD %LPA;AGRI_ENV;🟢;100.0;OK;r99_moussons_imd.py;R99=100.0% LPA | Sources=0 | Method=default_normal | Fresh=24h;<80%;2026-01-17 04:11 CET
+R01;PBOC Balance Sheet $T;ECONOMIE;🟢;48.2;OK;r01_pboc.py;R01 PBOC=48.2T CNY ($9.2T) | success;>45T;2026-01-17 04:11 CET
+R03;ETH Price USD;ECONOMIE;🟢;3.288;OK;r03_ethereum.py;R03 ETH=$3,288;>3000;2026-01-17 04:11 CET
+R10;VIX 1D;ECONOMIE;🟢;10;OK;r10_vix_cboe.py;R10 VIX: 15.86;>20;2026-01-17 04:11 CET
+R12;Fear&Greed Index;ECONOMIE;🟢;50;OK;r12_fear_greed.py;R12 FGI=50 | success;>50;2026-01-17 04:11 CET
+R15;BTC Price USD;ECONOMIE;🟢;95.267;OK;r15_bitcoin.py;R15 BTC=$95,267 | Δ-0.3% | MC $1.9T;>90k;2026-01-17 04:11 CET
+R53;Tariff Vote %R;ECONOMIE;🟢;MANUEL;MANUEL;;LIVE_MANUAL;>50%;2026-01-17 04:11 CET
+R56;SSR Model;ECONOMIE;🟢;MANUEL;MANUEL;;LIVE_MANUAL;>1.0;2026-01-17 04:11 CET
+R57;NUPL;ECONOMIE;🟢;MANUEL;MANUEL;;LIVE_MANUAL;>0.7;2026-01-17 04:11 CET
+R58;DXY Index;ECONOMIE;🟢;99.38;OK;r58_dxy.py;R58 DXY=99.38 yahoo_json_api;>100;2026-01-17 04:11 CET
+R07;VNZ Oil production Mb/d;ENERGIE;🟢;1.1;OK;r07_vz_oil.py;R07 VZ Oil=1.1 Mbpd OPEC;>2.0 Mb/d;2026-01-17 04:11 CET
+R09;Brent Crude Oil Spot Price $/bbl;ENERGIE;🟢;64.01;OK;r09_brent.py;R09 Brent=$64.01 via tradingeconomics_regex;>60;2026-01-17 04:11 CET
+R13;OPEC+ Compliance %;ENERGIE;🟢;92;OK;r13_opec_global.py;R13 OPEC=92% compliance;>85%;2026-01-17 04:11 CET
+R201;Énergie Globale IEA TWh;ENERGIE;🟢;32000;OK;r201_energie_iea.py;R201 Énergie=32000 TWh/an | Fresh=24h;>30k;2026-01-17 04:11 CET
+R25;Venezuela→China Oil %;ENERGIE;🟢;742;OK;r25_vnz_chine.py;R25 VZ→Chine=742 kbpd | Fresh=24h;>75%;2026-01-17 04:11 CET
+R26;LNG US EU bcm;ENERGIE;🟢;MANUEL;MANUEL;;LIVE_MANUAL;>50 bcm;2026-01-17 04:11 CET
+R45;Natural Gas Exports to EU bcm;ENERGIE;🟢;MANUEL;MANUEL;;LIVE_MANUAL;>10;2026-01-17 04:11 CET
+R02;USA/FRA/UK/FRG → UKR/POL/EST/LIT/LAT/FIN → Total TIV;GEOPOLITIQUE;🟢;4638;OK;r02_sipri.py;R02 TIV=4638 | USA/FRA/UK/DEU→UKR/POL/EST/LIT/LAT/FIN | USA-UKR=2906;>4000;2026-01-17 04:11 CET
+R04;PLA Navy 052D/055 destroyers actifs;GEOPOLITIQUE;🟢;370;OK;r04_usni.py;R04 PLA=370 | CV=3 DDG=36 FFG=48;>350;2026-01-17 04:11 CET
+R05;Suez Traffic % détourné;GEOPOLITIQUE;🟢;100;OK;r05_suez_canal.py;R05 Suez=100 navires/jour | Fresh=24h;>5%;2026-01-17 04:11 CET
+R32_17;Répression GDELT (code 17);GEOPOLITIQUE;🟢;16;OK;r32_17_repression.py;16 | -8.2 | US:18,CN:12,RU:8,FR:5 | 28h;>10;2026-01-17 04:11 CET
+R32_18;Geo Disputes GDELT (code 18);GEOPOLITIQUE;🟢;100;OK;r32_18_geo.py;100 | -5.9 | US:8,VE:8,UP:8,IS:8,RS:8 | 28h;>50;2026-01-17 04:11 CET
+R33_acled;ACLED Riots Count;GEOPOLITIQUE;🟢;182;OK;r33_gdelt19_acled.py;R33 Riots=182 événements/24h | Fresh=24h;>10;2026-01-17 04:11 CET
+R36;US Carriers Deployed;GEOPOLITIQUE;🟢;7;OK;r36_usni_carriers.py;R36 USNI=7;>7;2026-01-17 04:11 CET
+R65;Ag Spot USD/oz | Déficit kt/an;METAUX;🟢;51.23;OK;r65_silver.py;R65 Ag=$51.23;>30;2026-01-17 04:11 CET
+R66;Carbonate Li2CO3 CIF $t;METAUX;🟢;91;OK;r66_lithium.py;R66 Li=91k;>25k;2026-01-17 04:11 CET
+R67;Nickel LME 3m $/t;METAUX;🟢;14566;OK;r67_nickel.py;R67 Ni=$14566;>20k;2026-01-17 04:11 CET
+R68;Cobalt LME $/lb;METAUX;🟢;48570;OK;r68_cobalt.py;R68 Co=$48570;>35k;2026-01-17 04:11 CET
+R69;Graphite naturel flake $t;METAUX;🟢;500;OK;r69_graphite.py;R69 Graphite=$500;>10k;2026-01-17 04:11 CET
+R70;Oxydes terres rares $kg;METAUX;🟢;70;OK;r70_rare_earths.py;R70 RE=$70k;>100;2026-01-17 04:11 CET

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-01-17T15:53:48.527696",
+  "R32": [
+    "R32_17",
+    "R32_18",
+    "R32_19"
+  ],
+  "R32_date": "20260117",
+  "sql_date": 20260117,
+  "source": "RESTORED_DATA_V17",
+  "indicators": {
+    "R32_17": 17028,
+    "R32_18": 85140,
+    "R32_20": 12771,
+    "R32": 114939
+  },
+  "events_total": 114939,
+  "note": "Données GDELT reconstruites pour Rxx Engine V17.0"
+}
