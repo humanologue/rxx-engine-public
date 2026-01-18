@@ -1,145 +1,151 @@
-# 🚀 Rxx Engine V17.3 - GUIDE INSTALLATION & UTILISATION
+# **README.md COMPLET - RXX ENGINE V17.0**
 
-## 📋 **PRÉREQUIS**
-```
-✅ Python 3.12+ (testé 3.12)
-✅ Git (installé)
-✅ pip (inclus avec Python)
-✅ Accès internet (APIs/scripts)
-✅ Windows/Linux/MacOS
-```
+```markdown
+<div align="center">
 
-## 🎯 **INSTALLATION (5min)**
+# 🚀 RXX Engine V17.0 - Monitoring Géopolitique Temps Réel
 
-### **1. CLONER REPO**
+[![IDD Status](https://img.shields.io/badge/IDD-100%25-brightgreen.svg)]()
+[![Hypothèses](https://img.shields.io/badge/Hypothèses-6%2F8-blue.svg)]()
+[![GDELT](https://img.shields.io/badge/R32-1140%20%C3%A9v%C3%A9nements-red.svg)]()
+[![Battery](https://img.shields.io/badge/Battery-4%2F6%20SUPERCYCLE-orange.svg)]()
+
+**Système de monitoring stratégique 65 nœuds**  
+**Économie • Géopolitique • Énergie • Métaux • Cyber • Agri/Env**
+
+[Documentation](doc/documentation.md) • [Démo Dashboard](validation_report.html) • [GitHub Actions](https://github.com/humanologue/rxx-engine/actions)
+
+</div>
+
+## 🎯 Aperçu
+
+**RXX Engine** monitore **65 indicateurs critiques** en temps réel :
+
+| **Domaine** | **Exemples** | **Source** |
+|-------------|--------------|------------|
+| **Géopolitique** | R32 GDELT (1140 événements Code18) • OTAN • Carriers US | GDELT, SIPRI, USNI |
+| **Économie** | PBOC ($48T) • BTC/ETH • Fear&Greed (49) • DXY (99.38) | PBOC, CoinMarketCap |
+| **Énergie** | Brent ($64) • OPEC (92%) • LNG Russie (51%) • TTF (€37) | IEA, OPEC, EIA |
+| **Métaux** | **Li ($159k/t) • Ag ($89/oz) • Ni/Co** | **SUPERCYCLE 4/6** |
+| **Cyber** | Zero-days (269) • IOC (450) • C2 DNS (100) | CISA, VirusTotal |
+| **Agri/Env** | Séismes M6+ (2) • Sécheresse IMD (14%) • Forêts (-10.9%) | USGS, IMD, FAO |
+
+**Score IDD : 100/100** 🟢 **ROUTINE OK**
+
+## 🔥 Fonctionnalités Clés
+
+- **Validation Épistémique** : 8 hypothèses DYNAMO testées automatiquement
+- **GDELT R32** : 1140 événements Code18 mondial (quota robuste)
+- **Battery Metals** : Supercycle détecté **4/6** (Li/Ag/Ni/Co)
+- **Alertes Temps Réel** : Cyber (R00=269↑), Énergie (R11=51%↓)
+- **Base Historique** : 104 exécutions (rxx_history.db)
+- **Dashboard Interactif** : [validation_report.html](validation_report.html)
+
+## 📊 Hypothèses DYNAMO v2.4 (6/8 ✅)
+
+| **Hypothèse** | **Statut** | **Indicateurs** |
+|---------------|------------|-----------------|
+| H1_P4 | ✅ | R11=51% • R24=€37 |
+| H2_OTAN | ✅ | R02=4638 > 4000 |
+| H3_CYBER | ✅ | R00=269 • R81=450 |
+| **H5_GDELT** | ✅ | **R32=1140 événements** |
+| H6_CH_Afrique | ✅ | R01=48T$ |
+| H11_SCW | ✅ | R71=0.997B$ |
+
+## 🎛️ Installation & Utilisation
+
+### Prérequis
 ```bash
+Python 3.11+ -  Git -  BigQuery Console (optionnel)
+pip install -r requirements.txt
+```
+
+### Démarrage (2 min)
+```bash
+# Clone + install
 git clone https://github.com/humanologue/rxx-engine.git
 cd rxx-engine
-```
+pip install -r requirements.txt
 
-### **2. ENVIRONNEMENT VIRTUEL**
-```bash
-# Windows
-python -m venv rxx_env
-rxx_env\Scripts\activate
+# Données GDELT manuelles (quota robuste)
+# BigQuery Console → rootcodes_7j.csv → db_local/
 
-# Linux/Mac
-python3 -m venv rxx_env  
-source rxx_env/bin/activate
-```
-
-### **3. DÉPENDANCES**
-```bash
-pip install --upgrade pip
-pip install -r requirements_r32.txt
-pip install pandas numpy requests beautifulsoup4 lxml plotly
-pip install yfinance pyyaml sqlite3
-```
-
-## ⚡ **UTILISATION**
-
-### **Lancement Principal**
-```bash
+# Lancement
 python Rxx_Engine_V17.0.py
 ```
 
-**Sortie attendue** (72s) :
-```
-🚀 Rxx Engine V17.3 - VALIDATION ÉPISTÉMIQUE
-📊 51/51 scripts exécutés
-🔋 Battery Metals: 4/6 SUPERCYCLE
-🚨 Cyber: R00=269 ZeroDays
-🟢 IDD: 100/100 ROUTINE OK
-✅ validation_report.html généré
-```
-
-## 📊 **FICHIERS GÉNÉRÉS (CRITIQUES)**
-
-| Fichier | Contenu | Action |
-|---------|---------|--------|
-| `validation_report.html` | **DASHBOARD INTERACTIF** | Ouvrir navigateur |
-| `monitoring_enhanced.csv` | **65 nœuds export** | Excel/analyse |
-| `rxx_history.db` | **100 runs historiques** | SQLite |
-| `hypotheses_check.json` | **8 hypothèses DYNAMO** | JSON viewer |
-
-## 🔧 **CADENCE MONITORING RECOMMANDÉE**
-
+### Routine Quotidienne (14h)
 ```bash
-# QUOTIDIEN 6h
-0 6 * * * cd /path/to/rxx-engine && git pull && python Rxx_Engine_V17.0.py
-
-# 12h/18h focus Battery/Cyber
-0 12,18 * * * cd /path/to/rxx-engine && python Rxx_Engine_V17.0.py
+# 1. BigQuery → rootcodes_7j.csv (5min)
+# 2. Exécution
+python Rxx_Engine_V17.0.py
+# 3. GitHub
+git add . && git commit -m "RXX $(date +%Y%m%d)" && git push
 ```
 
-## 🎛️ **COMMANDE DEBUG & ANALYSE**
-
-```bash
-# Analyse DB historique
-python analyse_db.py
-
-# Dashboard avancé Plotly
-python dashboard_advanced.py
-
-# Test scripts individuels
-python r66_lithium.py    # Lithium CNY/T
-python r00_zeroday.py    # ZeroDays CVE
-```
-
-## 🚨 **ALERTES CRITIQUES V17.3**
+## 🛠️ Structure du Projet
 
 ```
-🔋 BATTERY SUPERCYCLE 4/6:
-✅ R66 Lithium: 159.5k CNY/T → LONG
-✅ R70 Rare Earths: 61$/kg → LONG
-
-🚨 CYBER THREATS:
-🔴 R00=269 ZeroDays → AUDIT IOC
-🔴 R92=100 C2 domains → BLOCKLIST
+rxx-engine/
+├── Rxx_Engine_V17.0.py      # Moteur principal IDD 100
+├── r32_gdelt.py             # R32 GDELT (1140|-6.2)
+├── ontologie.json           # 65 nœuds pipeline
+├── db_local/                # Données (ignoré .gitignore)
+│   └── rootcodes_7j.csv     # GDELT 35 lignes réelles
+├── doc/                     # Documentation complète
+├── validation_report.html   # Dashboard interactif
+└── rxx_history.db          # 104 exécutions historiques
 ```
 
-## 💾 **MAINTENANCE**
-
-```bash
-# Mise à jour Git
-git pull origin main
-
-# Cache clean (optionnel)
-rm -rf cache/*.pkl __pycache__/
-
-# Backup DB
-cp rxx_history.db rxx_history_$(date +%Y%m%d).db
-```
-
-## 🛠️ **DÉPANNAGE RAPIDE**
-
-| Problème | Solution |
-|----------|----------|
-| `ModuleNotFoundError` | `pip install -r requirements_r32.txt` |
-| `API timeout` | Vérifier internet + `pip install --upgrade requests` |
-| `R98 lent (16s)` | Normal IMD Drought API |
-| `R84 lent (12s)` | Normal USDA Cereals API |
-| **Dashboard vide** | Ouvrir `validation_report.html` |
-
-## 📈 **INTERPRÉTATION RÉSULTATS**
+## 📈 Résultats V17.0 (18/01)
 
 ```
-🟢 IDD 100/100 → ROUTINE OK
-🟢 Battery 4/6 → SUPERCYCLE (ACCUMULATION)
-🚨 R00>15 → CYBER SURVEILLANCE
-📊 H1/H2/H3/H5/H6/H11 → Système nominal
+🎯 IDD: 100.0/100 🟢 ROUTINE OK
+📊 Nœuds: 65 | Scripts: 51/65 OK
+✅ H5_GDELT: R32=1140 événements Code18
+🔋 Battery: 4/6 SUPERCYCLE (Li/Ag/Ni/Co)
+🚨 Alertes: R00=269 zero-days ↑ | R92=100 C2 DNS
+⏱️ Timing: 98s (R98=28s, R99=19s)
 ```
 
-## 🌐 **Ressources**
+## 🔮 Signaux Stratégiques
+
 ```
-📂 GitHub: https://github.com/humanologue/rxx-engine
-🗃️ DB: rxx_history.db (SQLite)
-📊 Ontologie: ontologie.json (65 nœuds)
-📋 Scripts: 51 sources temps réel
+🟢 Battery Metals SUPERCYCLE → ACCUMULATION AGRESSIVE
+🟢 Chine PBOC $48T → Stable
+🟢 OTAN R02=4638 → Effort militaire ↑
+🟡 Cyber R00=269 zero-days → Vigilance
+🟡 LNG Russie 51% → Dépendance persistante
 ```
 
-***
+## 🤝 Contributing
 
-**💾 Copiez ce document → `README.md` → `git add README.md && git commit -m "Documentation installation V17.3" && git push`**
+1. **Fork** le projet
+2. **BigQuery** → `rootcodes_7j.csv` à jour
+3. **Test** `python Rxx_Engine_V17.0.py`
+4. **PR** vers `main`
 
-**Rxx Engine V17.3 = PLUG & PLAY → `python Rxx_Engine_V17.0.py` → Dashboard prêt** 🎯
+## 📄 Licence
+
+[MIT](LICENSE) - Utilisation libre recherche/monitoring
+
+## 👥 Auteurs
+
+**humanologue** - Monitoring géopolitique IA  
+[github.com/humanologue](https://github.com/humanologue)  
+**V17.0** - 18/01/2026 - IDD 100/100
+
+---
+
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/humanologue/rxx-engine?style=social)](https://github.com/humanologue/rxx-engine)
+[![GitHub forks](https://img.shields.io/github/forks/humanologue/rxx-engine?style=social)](https://github.com/humanologue/rxx-engine)
+
+**🚀 RXX Engine V17.0 - Géopolitique en Temps Réel**
+
+</div>
+```
+
+
+```
