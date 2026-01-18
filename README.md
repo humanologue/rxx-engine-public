@@ -1,6 +1,4 @@
-Voici le fichier remis en forme pour votre repository GitHub avec une présentation plus organisée et professionnelle :
 
-```markdown
 # 🚀 RXX Engine V17.0 - Monitoring Géopolitique Temps Réel
 
 [![IDD Status](https://img.shields.io/badge/IDD-100%25-brightgreen.svg)](attached_file:1)
